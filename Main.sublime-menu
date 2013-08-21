@@ -1,0 +1,26 @@
+[
+    {
+        "caption": "Tools",
+        "mnemonic": "t",
+        "id": "tools",
+        "children":
+        [
+            {
+                "caption": "DevDocs",
+                "mnemonic": "f",
+                "id": "devdocs",
+                "children":
+                [
+                    {
+                        "command": "devdocs_search_selection",
+                        "caption": "Search Selection"
+                    },
+                    {
+                        "command": "devdocs_search_from_input",
+                        "caption": "Search From Input"
+                    }
+                ]
+            }
+        ]
+    }
+]

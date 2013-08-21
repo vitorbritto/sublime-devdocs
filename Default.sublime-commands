@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "DevDocs: Search Selection",
+        "command": "devdocs_search_selection"
+    },
+    {
+        "caption": "DevDocs: Search from Input",
+        "command": "devdocs_search_from_input"
+    }
+]
