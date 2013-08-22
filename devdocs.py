@@ -1,42 +1,31 @@
 # Written by Vitor Britto (code@vitorbritto.com.br / vitorbritto.com.br)
-# based on StackOverflow Search Plugin by Eric Martel (emartel@gmail.com / www.ericmartel.com)
-
-# available commands
-#   devdocs_search_selection
-#   devdocs_search_from_input
-
+# based on Can I Use It Search Plugin by Tim Kleinschmidt (tim.kleinschmidt@gmail.com)
 
 import sublime
 import sublime_plugin
+import re
 
-import subprocess
-import webbrowser
 
-def SearchFor(text):
-    url = 'http://devdocs.io/#q=' + text.replace(' ','%20')
-    webbrowser.open_new_tab(url)
+# Outside pattern compilation to have better performance for multi selection
+CLEAN_CSS_PATTERN = re.compile(r'([a-z-]+)', re.IGNORECASE)
+BASE_URL = 'http://devdocs.io/#q='
 
-class DevDocsSearchSelectionCommand(sublime_plugin.TextCommand):
+
+class DevDocsCommand(sublime_plugin.TextCommand):
+    """
+    This will search a word or a selection.
+    Default binding recommendation: "ctrl + alt + d"
+    """
+
     def run(self, edit):
-        for selection in self.view.sel():
-            # if the user didn't select anything, search the currently highlighted word
-            if selection.empty():
-                text = self.view.word(selection)
-
-            text = self.view.substr(selection)
-
-            SearchFor(text)
-
-class DevDocsSearchFromInputCommand(sublime_plugin.WindowCommand):
-    def run(self):
-        # Get the search item
-        self.window.show_input_panel('Search DevDocs for', '',
-            self.on_done, self.on_change, self.on_cancel)
-    def on_done(self, input):
-        SearchFor(input)
-
-    def on_change(self, input):
-        pass
-
-    def on_cancel(self):
-        pass
+        for region in self.view.sel():
+            # Get the start point of the region of the selection
+            point = region.begin()
+            scope = self.view.extract_scope(point)
+            search = self.view.substr(scope)
+            # Clean the selection
+            re_search = CLEAN_CSS_PATTERN.search(search)
+            if re_search:
+                search = re_search.group()
+            self.view.window().run_command('open_url', \
+                {"url": BASE_URL + search})

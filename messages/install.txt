@@ -1,7 +1,29 @@
+DevDocs
+=======
+
 Very simple search on DevDocs by Vitor Britto (code@vitorbritto.com.br / vitorbritto.com.br)
+
+
+Customization
+=============
+
+Include this in the user key binding to overwrite default behaviour
+
+    { "keys": ["ctrl+shift+d"], "command": "dev_docs" }
+
+
+Usage
+=====
+
+Highlight text, right click & click "Search DevDocs" to open a new tab on your web browser with the info. You can also use the shortcut.
+
+
+Support
+=======
 
 Please direct any feedback to code@vitorbritto.com.br or through github at https://github.com/vitorbritto/sublime-devdocs.
 
 Thank you for your support.
 
 Vitor Britto
+

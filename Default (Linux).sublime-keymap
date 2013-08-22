@@ -1,0 +1,5 @@
+[
+    {
+        "keys": ["ctrl+shift+d"], "command": "dev_docs"
+    }
+]
