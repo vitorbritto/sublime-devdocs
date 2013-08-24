@@ -1,0 +1,21 @@
+DevDocs 1.1.0 changelog
+=============================
+
+CHANGES/FIXES
+-------------
+- Fixed problem with hidden menus
+- Apologizing for hasty v1.0.0 release ;)
+
+NEW FEATURES
+------------
+- Added "Search by selection" and "Search by input" sections to the README
+- Added shortcut for "Search by input"
+- New menu on the (Sublime Text) Command Palette
+
+
+Support
+=======
+
+Please direct any feedback to code@vitorbritto.com.br or through github at https://github.com/vitorbritto/sublime-devdocs.
+
+Thank you for your support.

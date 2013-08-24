@@ -1,12 +1,27 @@
 # Search DevDocs
 
+
 ## About
 This is a [Sublime Text](http://www.sublimetext.com) plugin allowing you to easily search the DevDocs documentation.
 
-The plugin code is based on [Can I Use It Search Plugin](https://github.com/Azd325/sublime-text-caniuse) by Tim Kleinschmidt (tim.kleinschmidt@gmail.com)
+The plugin code is based on the [Stackoverflow Plugin](https://github.com/ericmartel/Sublime-Text-2-Stackoverflow-Plugin) script by Eric Martel.
+
 
 ## Usage
-Highlight text, right click & click "Search DevDocs" to open a new tab on your web browser with the info. You can also use the shortcut.
+
+### Search by selection
+Highlight text, right click & click "Search DevDocs" to open a new tab on your web browser with the info.
+
+### Search by input
+1. Open your command pallete with `ctrl + shift + p` (Linux/Windows) or `cmd + shift + p` (OS X)
+2. Type "devdocs"
+3. Click on "Search From Input"
+4. Type your keyword
+
+***You can also use the shortcut (`ctrl + shift + d`).***
+
+> To search a specific documentation, type its name and a space before your keyword. (e.g: js date)
+
 
 ## Installation
 The easiest way to install this is with [Package Control](http://wbond.net/sublime\_packages/package\_control).
@@ -19,7 +34,3 @@ The easiest way to install this is with [Package Control](http://wbond.net/subli
 Package Control will automatically keep Git up to date with the latest version.
 
 If you have some problems or improvements with it, [contact me](https://github.com/vitorbritto/sublime-devdocs/issues) via GitHub.
-
-### TODO
-
-- Search by input

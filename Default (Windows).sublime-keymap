@@ -1,6 +1,5 @@
 [
     {
-        "keys": ["ctrl+shift+d"], "command": "dev_docs"
+        "keys": ["ctrl+shift+d"], "command": "dev_docs_search_from_input"
     }
 ]
-

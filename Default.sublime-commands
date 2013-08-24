@@ -1,0 +1,4 @@
+[
+    { "command": "dev_docs_search_selection", "caption": "DevDocs: Search From Selection" },
+    { "command": "dev_docs_search_from_input", "caption": "DevDocs: Search From Input" }
+]

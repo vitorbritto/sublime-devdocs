@@ -1,4 +1,4 @@
 [
     { "caption": "-"},
-    { "command": "dev_docs", "caption": "DevDocs Search" }
+    { "command": "dev_docs_search_selection", "caption": "Search DevDocs" }
 ]
