@@ -1,0 +1,14 @@
+DevDocs 1.1.1 changelog
+=============================
+
+CHANGES/FIXES
+-------------
+- Fixed problem with shortcuts
+
+
+Support
+=======
+
+Please direct any feedback to code@vitorbritto.com.br or through github at https://github.com/vitorbritto/sublime-devdocs.
+
+Thank you for your support.

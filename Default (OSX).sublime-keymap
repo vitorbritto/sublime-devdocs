@@ -1,5 +1,5 @@
 [
     {
-        "keys": ["ctrl+shift+d"], "command": "dev_docs_search_from_input"
+        "keys": ["alt+shift+d"], "command": "dev_docs_search_from_input"
     }
 ]
