@@ -9,7 +9,7 @@ Customization
 
 Include this in the user key binding to overwrite default behaviour
 
-    { "keys": ["ctrl+shift+d"], "command": "dev_docs" }
+    { "keys": ["ctrl+shift+d"], "command": "dev_docs_search_selection" }
 
 
 Usage
