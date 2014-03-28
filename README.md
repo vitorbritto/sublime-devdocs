@@ -34,3 +34,8 @@ The easiest way to install this is with [Package Control](http://wbond.net/subli
 Package Control will automatically keep Git up to date with the latest version.
 
 If you have some problems or improvements with it, [contact me](https://github.com/vitorbritto/sublime-devdocs/issues) via GitHub.
+
+
+## License
+
+[MIT License](http://vitorbritto.mit-license.org/) © Vitor Britto
